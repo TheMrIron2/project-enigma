@@ -69,7 +69,7 @@ void IPLog_Init (void)
 #ifdef _WIN32
 	Sys_GetLock();
 #endif
-	f = fopen(va("%s/id1/iplog.dat", host_parms.basedir), "r"); // Baker 3.83 ... todo: double check that -basedir operates as expected
+	f = fopen(va("%s/enigma/iplog.dat", host_parms.basedir), "r"); // Baker 3.83 ... todo: double check that -basedir operates as expected
 
 	if (f)
 	{
@@ -133,7 +133,7 @@ void IPLog_WriteLog (void)
 #endif
 
 	// first merge
-	f = fopen(va("%s/id1/iplog.dat",host_parms.basedir), "r");
+	f = fopen(va("%s/enigma/iplog.dat",host_parms.basedir), "r");
 	if (f)
 	{
 		while(fread(&temp, 20, 1, f))
@@ -142,7 +142,7 @@ void IPLog_WriteLog (void)
 	}
 
 	// then write
-	f = fopen(va("%s/id1/iplog.dat",host_parms.basedir), "w");
+	f = fopen(va("%s/enigma/iplog.dat",host_parms.basedir), "w");
 	if (f)
 	{
 		if (iplog_full)
@@ -339,7 +339,7 @@ void IPLog_Dump_f (void)
 		return;
 	}
 
-	f = fopen(va("%s/id1/iplog.txt",host_parms.basedir), "w");
+	f = fopen(va("%s/enigma/iplog.txt",host_parms.basedir), "w");
 	if (!f)
 	{
 		Con_Printf ("Couldn't write iplog.txt.\n");

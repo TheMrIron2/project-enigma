@@ -887,7 +887,7 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 	// Baker 3.76 - playing demos via file association
 
-	snprintf (fpaktest, sizeof(fpaktest), "%s/id1/pak0.pak", cwd); // Baker 3.76 - Sure this isn't gfx.wad, but let's be realistic here
+	snprintf (fpaktest, sizeof(fpaktest), "%s/enigma/pak0.pak", cwd); // Baker 3.76 - Sure this isn't gfx.wad, but let's be realistic here
 
 	if(!(i = GetModuleFileName(NULL, com_basedir, sizeof(com_basedir)-1)))
 		Sys_Error("FS_InitFilesystemEx: GetModuleFileName failed");

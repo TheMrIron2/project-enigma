@@ -386,7 +386,7 @@ void Host_WriteConfiguration (void)
 // config.cfg cvars
 	if (host_initialized & !isDedicated)
 	{
-		f = fopen (va("%s/id1/config.cfg",host_parms.basedir), "w");
+		f = fopen (va("%s/enigma/config.cfg",host_parms.basedir), "w");
 		if (!f)
 		{
 			Con_Printf ("Couldn't write config.cfg.\n");

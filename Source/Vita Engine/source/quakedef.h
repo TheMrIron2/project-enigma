@@ -54,7 +54,7 @@ extern int m_state;
 
 //define	PARANOID			// speed sapping error checking
 
-#define	GAMENAME_DIR	"id1"
+#define	GAMENAME_DIR	"enigma"
 
 #include <math.h>
 #include <string.h>
