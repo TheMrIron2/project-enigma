@@ -1,0 +1,9 @@
+../../../PSP/enigma/progs.dat
+
+../defs.qc
+../defs/psp.qc
+../main.qc
+../map_entities.qc
+../impulses.qc
+../client.qc
+../dummys.qc

@@ -1,0 +1,19 @@
+﻿../csaddon.dat
+//pr_dumpplatform -FFTE -Fdefines -TCS -O csplat
+
+//#pragma flag enable assumeint
+//#pragma flag enable typeexplicit
+
+#define CSQC
+csplat.qc
+csfixups.qc
+
+editor_lights.qc
+editor_terrain.qc
+editor_brushes.qc
+editor_ents.qc
+textfield.qc
+editor_particles.qc
+menu.qc
+cam.qc
+csaddon.qc

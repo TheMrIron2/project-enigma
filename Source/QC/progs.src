@@ -1,0 +1,3 @@
+#pragma sourcefile progs/pcprogs.src
+#pragma sourcefile progs/pspprogs.src
+#pragma sourcefile progs/vitaprogs.src

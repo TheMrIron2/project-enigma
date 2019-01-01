@@ -1,0 +1,4 @@
+game enigma
+name "Project Enigma"
+basegame enigma
+disablehomedir 1
