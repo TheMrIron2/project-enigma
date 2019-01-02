@@ -23,3 +23,9 @@ And more!
 ^Ad-Hoc is only applicable to PSP and Vita.
 
 ### Coming Soon.
+
+# Compilation
+## Wii
+1. Grab [devkitPPC](https://devkitpro.org/wiki/Getting_Started/devkitPPC) for your platform, and this source.
+2. `make`
+3. If all is successful, you'll have `QuakeGX.dol` and `QuakeGX.elf` in <repository directory>/Wii. Rename the dol to `boot.dol` and you'll be good to slap it on a SD.

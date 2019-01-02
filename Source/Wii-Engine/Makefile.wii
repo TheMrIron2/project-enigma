@@ -22,8 +22,10 @@ SOURCES		:=	src/wii\
 			src/wii/gx\
 			src/generic
 
-INCLUDES	:=	$(DEVKITPPC)/libogc/include \
-			$(DEVKITPRO)/libogc/include/ogc
+export INCLUDE  :=  $(foreach dir,$(INCLUDES), -iquote $(CURDIR)/$(dir)) \
+           $(foreach dir,$(LIBDIRS),-I$(dir)/include) \
+           -I$(CURDIR)/$(BUILD) \
+           -I$(LIBOGC_INC) -I$(LIBOGC_INC)/ogc
 
 #---------------------------------------------------------------------------------
 # options for code generation
@@ -63,7 +65,7 @@ export DEPSDIR	:=	$(CURDIR)/$(BUILD)
 #---------------------------------------------------------------------------------
 CFILES		:=	$(foreach dir,$(SOURCES),$(notdir $(wildcard $(dir)/*.c)))
 CPPFILES	:=	$(foreach dir,$(SOURCES),$(notdir $(wildcard $(dir)/*.cpp)))
-	
+
 #---------------------------------------------------------------------------------
 # use CXX for linking C++ projects, CC for standard C
 #---------------------------------------------------------------------------------
