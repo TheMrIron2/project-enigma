@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/215/branches/piko/quake_wii/src/wii/gx
+END
+gx_model.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_model.h
+END
+video_gx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/video_gx.c
+END
+gx_rmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_rmain.c
+END
+gx_refrag.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_refrag.c
+END
+gx_warp.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_warp.c
+END
+gxquake.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gxquake.h
+END
+anorm_dots.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/anorm_dots.h
+END
+gx_rmisc.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_rmisc.c
+END
+gx_screen.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_screen.c
+END
+gx_textures.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_textures.c
+END
+gx_warp_sin.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_warp_sin.h
+END
+gx_rpart.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_rpart.c
+END
+gx_rlight.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_rlight.c
+END
+gx_mesh.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/215/branches/piko/quake_wii/src/wii/gx/gx_mesh.c
+END
+gx_osk.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_osk.c
+END
+gx_draw.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_draw.c
+END
+gx_model.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_model.c
+END
+gx_rsurf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/gx_rsurf.c
+END
+128_128_datamap.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/214/branches/piko/quake_wii/src/wii/gx/128_128_datamap.h
+END
