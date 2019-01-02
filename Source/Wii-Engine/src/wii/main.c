@@ -10,7 +10,7 @@ of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 See the GNU General Public License for more details.
 
@@ -41,6 +41,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "input_wiimote.h"
 #include <network.h>
 #include <errno.h>
+#include <wiikeyboard/keyboard.h>
 
 #if USBGECKO_DEBUG
 #include <debug.h>
@@ -127,9 +128,10 @@ static void init()
 
 	// Initialise the controller library.
 	PAD_Init();
-	
-	// Initialise the keyboard library
-	KEYBOARD_Init();
+
+	// Initialise the keyboard library.
+	// null callback as we while() GetEvent(keyboard_event)s later
+	KEYBOARD_Init(NULL);
 
 #ifndef DISABLE_WIIMOTE
 	if (WPAD_Init() != WPAD_ERR_NONE)
@@ -180,7 +182,7 @@ static void add_parm(const char *parm)
 {
 	if (strlen(parm) + ((u32)parms_ptr - (u32)parms) > 1023)
 		Sys_Error("cmdline > 1024");
-	
+
 	strcpy(parms_ptr, parm);
 	parms_array[parms_number++] = parms_ptr;
 	parms_ptr += strlen(parm) + 1;
@@ -203,9 +205,9 @@ void frontend(void)
 
 	else
 	{
-		do 
+		do
 		{
-			sys_netinit_error = if_config(sys_ipaddress_text, NULL, NULL, TRUE);
+			sys_netinit_error = if_config(sys_ipaddress_text, NULL, NULL, NULL, TRUE);
 		} while((sys_netinit_error == -EAGAIN));
 
 		char temp_num[32];
@@ -230,7 +232,7 @@ static void* main_thread_function(void *p)
 	{
 		_CPU_ISR_Restore(level);
 		Sys_Error("heap + real_heap_size > (u32)SYS_GetArena2Hi()");
-	}	
+	}
 	else
 	{
 		SYS_SetArena2Lo(heap + real_heap_size);
