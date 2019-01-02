@@ -1,0 +1,536 @@
+513
+Introduction___________________________
+2
+1.000000
+0.000000
+0.000000
+0.000000
+start
+18.539001
+255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maps/start.bsp
+*1
+*2
+*3
+*4
+*5
+*6
+*7
+*8
+*9
+*10
+*11
+*12
+*13
+*14
+*15
+*16
+*17
+*18
+*19
+*20
+*21
+*22
+*23
+*24
+*25
+*26
+*27
+*28
+*29
+*30
+*31
+*32
+*33
+*34
+*35
+*36
+*37
+*38
+*39
+*40
+*41
+*42
+*43
+*44
+*45
+*46
+*47
+*48
+*49
+*50
+*51
+*52
+*53
+*54
+progs/player.mdl
+
+
+general {
+"maxprogs" "64"
+"numentities" "13"
+}
+progs 0 {
+"filename" "qwprogs.dat"
+"crc" "5927"
+}
+globals 0 {
+"time" "18.537001"
+"frametime" "0.002000"
+"mapname" "start"
+}
+entity 0{
+"modelindex" "1"
+"lastruntime" "18.537001"
+"movetype" "7"
+"solid" "4"
+"classname" "worldspawn"
+"model" "maps/start.bsp"
+"mins" "-736 176 -704"
+"maxs" "2208 3232 530.909"
+"sounds" "4"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "Introduction"
+"wad" "gfx/start.wad"
+}
+entity 1{
+"modelindex" "56"
+"absmin" "965.097 1176.89 -176.969"
+"absmax" "999.097 1210.89 -118.969"
+"movetype" "3"
+"solid" "3"
+"origin" "982.097 1193.89 -151.969"
+"oldorigin" "982.097 1193.89 -151.969"
+"angles" "-2.85828 58.1177 0"
+"classname" "player"
+"model" "progs/player.mdl"
+"mins" "-16 -16 -24"
+"maxs" "16 16 32"
+"size" "32 32 56"
+"health" "100"
+"takedamage" "2"
+"view_ofs" "0 0 22"
+"v_angle" "8.57483 58.1177 0"
+"netname" "Player"
+"flags" "520"
+"colormap" "1"
+"waterlevel" "3"
+"watertype" "-5"
+"gravity" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"maxspeed" "320"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 2{
+"lastruntime" "18.537001"
+"origin" "544 288 32"
+"angles" "0 90 0"
+"classname" "info_player_start"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 3{
+"modelindex" "30"
+"absmin" "1183 1695 15"
+"absmax" "1217 1761 89"
+"lastruntime" "18.537001"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*29"
+"mins" "1184 1696 16"
+"maxs" "1216 1760 88"
+"size" "32 64 72"
+"spawnflags" "2048"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "269"
+"uniquespawnid" "269"
+}
+entity 4{
+"lastruntime" "18.537001"
+"origin" "704 304 24"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "17"
+"uniquespawnid" "17"
+}
+entity 5{
+"lastruntime" "18.537001"
+"origin" "192 1168 -40"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 6{
+"lastruntime" "18.537001"
+"origin" "464 320 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "52"
+"uniquespawnid" "52"
+}
+entity 7{
+"lastruntime" "18.537001"
+"origin" "624 320 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 8{
+"lastruntime" "18.537001"
+"origin" "704 336 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 9{
+"lastruntime" "18.537001"
+"origin" "384 336 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+entity 10{
+"modelindex" "49"
+"absmin" "-353 1807 -385"
+"absmax" "-335 1905 -31"
+"lastruntime" "18.537001"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*48"
+"mins" "-352 1808 -384"
+"maxs" "-336 1904 -32"
+"size" "16 96 352"
+"spawnflags" "2048"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "19"
+"uniquespawnid" "19"
+}
+entity 11{
+"lastruntime" "18.537001"
+"origin" "544 1536 32"
+"angles" "0 90 0"
+"classname" "info_player_start2"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "5"
+"uniquespawnid" "5"
+}
+

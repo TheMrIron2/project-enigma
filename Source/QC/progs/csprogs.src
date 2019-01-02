@@ -1,0 +1,7 @@
+../../../PC/enigma/csprogs.dat
+
+../client/csdefs.qc
+../client/customdefs.qc
+../client/hud.qc
+../client/menu.qc
+../client/main.qc

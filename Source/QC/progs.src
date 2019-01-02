@@ -1,3 +1,5 @@
-#pragma sourcefile progs/pcprogs.src
+#pragma sourcefile progs/ssprogs.src
+#pragma sourcefile progs/csprogs.src
 #pragma sourcefile progs/pspprogs.src
 #pragma sourcefile progs/vitaprogs.src
+#pragma sourcefile progs/wiiprogs.src

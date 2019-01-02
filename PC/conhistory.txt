@@ -1,0 +1,25 @@
+map start
+restart
+map start
+god
+noclip
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+quit
+map start
+map start
+map start
+map start
