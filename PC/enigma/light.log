@@ -1,0 +1,49 @@
+---- light / ericw-tools v0.18.1 ----
+Raytracing backend: Embree
+running with 4 threads
+LoadBSPFile: 'C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp'
+BSP is version 29
+Loaded extended texinfo flags from C:\msys64\project-enigma\PC\enigma\maps\nuke.texinfo
+--- LoadEntities ---
+3 entities read, 1 are lights.
+--- OptionsSummary ---
+    "dist" was set to "1.000000" from map
+    "range" was set to "0.500000" from map
+    "gamma" was set to "1.000000" from map
+    "light" was set to "0.000000" from map
+    "phong" was set to "0" from map
+    "bounce" was set to "1" from map
+    "sunlight" was set to "200.000000" from map
+    "sunlight_color" was set to "255 255 153" from map
+    "sunlight_mangle" was set to "-4.37114e-008 0 1" from map
+    "sunlight_penumbra" was set to "0.000000" from map
+Embree_TraceInit: Embree version: 2.15.0
+Embree_TraceInit:
+	0 sky faces
+	227 solid faces
+	0 filtered faces
+	0 shadow-casting skip faces
+SetupLights: 1 initial lights
+SetupLights: 1 after surface lights
+SetupLights: 1 after jittering
+--- EstimateLightVisibility ---
+0
+Final count: 1 lights 1 suns in use.
+Colored light entities/settings detected: .lit output enabled.
+--- LightWorld ---
+--- MakeTextureColors ---
+--- MakeBounceLights ---
+0....1....2....3....4....5....6....7....8....9....
+0....1....2....3....4....5....6....7....8....9....
+Lighting Completed.
+
+lightdatasize: 7892
+Writing C:\msys64\project-enigma\PC\enigma\maps\nuke.lit
+0 switchable light styles (32 max)
+Writing C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp as BSP version 29
+0.127 seconds elapsed
+
+stats:
+0.765480 lights tested, 0.379700 hits per sample point
+27.546346 bounce lights tested, 16.443728 hits per sample point
+0 empty lightmaps

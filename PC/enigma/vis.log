@@ -1,0 +1,17 @@
+---- vis / ericw-tools v0.18.1 ----
+running with 4 threads
+testlevel = 4
+LoadBSPFile: 'C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp'
+BSP is version 29
+    56 leafs
+   156 portals
+Calculating Base Vis:
+0....1....2....3....4....5....6....7....8....9....
+Calculating Full Vis:
+0....1....2....3....4....5....6....7....8....9....
+average leafs visible: 49
+c_noclip: 0
+c_chains: 23420
+visdatasize:387  compressed from 392
+Writing C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp as BSP version 29
+  0.1 seconds elapsed

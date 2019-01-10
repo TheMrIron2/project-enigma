@@ -38,4 +38,6 @@ void() PutClientInServer = {
 
     self.view_ofs = '0 0 22';
     self.velocity = '0 0 0';
+
+    self.maxspeed = 120; //temporarily here (FIXME) - add walk speeds
 }

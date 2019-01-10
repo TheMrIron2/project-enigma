@@ -23,3 +23,22 @@ map start
 map start
 map start
 map start
+fov 70
+map nuke
+movespeed
+oof
+name ok
+ff
+cl_movespeed
+/cl_movespeed
+/cl_movespeedkey
+/cl_movespeedkey 1
+/cl_movespeedkey 0.1
+movespeed
+map nuke
+map nuke
+map nuke
+map nuke
+map nuke
+fov 70
+fov 65
