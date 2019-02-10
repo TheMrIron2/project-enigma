@@ -4,6 +4,11 @@
 
 void() W_Fire = {
     self.currentmag--;
-    centerprint(self, strcat(ftos(self.currentmag), "/", ftos(self.currentammo)));
 }
 
+void() checkPlayer = {
+    if (self.button0) {
+        if (self.currentmag > 0)
+            W_Fire();
+    }
+}

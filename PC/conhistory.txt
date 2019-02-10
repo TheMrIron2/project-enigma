@@ -42,3 +42,22 @@ map nuke
 map nuke
 fov 70
 fov 65
+map nuketown
+fov 65
+noclip
+sv_cheats 1
+restart
+noclip
+noclip
+sv_cheats 1
+restart
+noclip
+noclip
+sv_cheats 1
+restart
+noclip
+map start
+map start
+sv_cheats 1
+restart
+noclip

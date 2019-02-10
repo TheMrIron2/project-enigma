@@ -1,5 +1,5 @@
-TARGET		:= vitaQuake
-TITLE		:= QUAK00001
+TARGET		:= enigma
+TITLE 		:= ENIGMA001
 GIT_VERSION := $(shell git describe --abbrev=6 --dirty --always --tags)
 
 LIBS = -lvitaGL -lvorbisfile -lvorbis -logg  -lspeexdsp -lmpg123 \

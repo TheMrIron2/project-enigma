@@ -39,9 +39,42 @@ noref void() CSQC_WorldLoaded =
 {
 	if(!vmodel)
 		vmodel = spawn();
-
+		
+	vmodel.renderflags = RF_VIEWMODEL;
+	vmodel.origin = '0 0 0';
+	vmodel_targetpos = vmodel_currentpos = vmodel.origin;
+	vmodel_velocity = '0 0 0';
 	setmodel(vmodel,"");
 };
+
+void() Update_Vmodel =
+{
+	local vector offset;
+	local vector dir;
+	
+	offset_x = 0.6 * sin(time * 1.2);
+	offset_y = 0.4 * cos(time * 1.5);
+	offset_z = 0.7 * sin(1.1*time + 0.5);
+	
+	dir = vmodel_targetpos - vmodel_currentpos;
+	if(vlen(dir) < (0.15 * 128 * frametime))
+		vmodel_currentpos = vmodel_targetpos;
+	else
+		vmodel_currentpos += (dir * 0.15 * 128) * frametime;
+	
+	if(vlen(vmodel.angles) < (0.1 * 128 * frametime))
+		vmodel.angles = '0 0 0';
+	else
+		vmodel.angles += (-vmodel.angles * 0.2 * 128) * frametime;
+		
+	vmodel_currentpos += (vmodel_velocity * 128) * frametime;
+	vmodel_velocity *= 1 - frametime * 30;
+	
+	vmodel.angles += (vmodel_avelocity * 128) * frametime;
+	vmodel_avelocity *= 1 - frametime * 30;
+	
+	vmodel.origin = vmodel_currentpos + offset;
+}
 
 noref void(float isnew) CSQC_Ent_Update =
 {
@@ -67,12 +100,12 @@ noref void(float width, float height, float menushown) CSQC_UpdateView =
 	//do viewmodel manipulation, purely cosmetic stuff
 	if(vmodel)
 	{
+		Update_Vmodel();
+		addentity(vmodel);
 		local vector vorg;
 		local vector vang;
 		vorg = getviewprop(VF_ORIGIN);
 		vang = getviewprop(VF_ANGLES);
-
-		addentity(vmodel);
 	}
 
 	//does what you think it does
@@ -178,6 +211,19 @@ noref void() CSQC_Parse_Event =
 	local float first = readbyte();
 
 	switch (first) {
+		case EVENT_WEAPONCHANGE:
+			local float to;
+			to = readbyte();
+			setmodel(vmodel, getWeaponModel(TRUE, to));
+
+			vmodel.origin = '0 0 0';
+			vmodel.angles = '-60 0 0';
+			
+			weapon = to;
+			break;
+		case EVENT_GAMEMODESET:
+			gamemode = readbyte();
+			break;
         default:
             break;
     }

@@ -281,13 +281,6 @@ float   STATE_LOWERED           = 1;
 float	STATE_UP		= 2;
 float	STATE_DOWN		= 3;
 
-vector	VEC_ORIGIN = '0 0 0';
-vector	VEC_HULL_MIN = '-16 -16 -24';
-vector	VEC_HULL_MAX = '16 16 32';
-
-vector	VEC_HULL2_MIN = '-32 -32 -24';
-vector	VEC_HULL2_MAX = '32 32 64';
-
 // protocol bytes
 float	SVC_BAD			= 0;
 float	SVC_NOP			= 1;

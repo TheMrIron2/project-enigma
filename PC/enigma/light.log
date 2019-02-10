@@ -1,11 +1,11 @@
 ---- light / ericw-tools v0.18.1 ----
 Raytracing backend: Embree
 running with 4 threads
-LoadBSPFile: 'C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp'
+LoadBSPFile: 'C:\msys64\project-enigma\PC\enigma\maps\nuketown.bsp'
 BSP is version 29
-Loaded extended texinfo flags from C:\msys64\project-enigma\PC\enigma\maps\nuke.texinfo
+Loaded extended texinfo flags from C:\msys64\project-enigma\PC\enigma\maps\nuketown.texinfo
 --- LoadEntities ---
-3 entities read, 1 are lights.
+5 entities read, 3 are lights.
 --- OptionsSummary ---
     "dist" was set to "1.000000" from map
     "range" was set to "0.500000" from map
@@ -20,15 +20,15 @@ Loaded extended texinfo flags from C:\msys64\project-enigma\PC\enigma\maps\nuke.
 Embree_TraceInit: Embree version: 2.15.0
 Embree_TraceInit:
 	0 sky faces
-	227 solid faces
+	682 solid faces
 	0 filtered faces
 	0 shadow-casting skip faces
-SetupLights: 1 initial lights
-SetupLights: 1 after surface lights
-SetupLights: 1 after jittering
+SetupLights: 3 initial lights
+SetupLights: 3 after surface lights
+SetupLights: 3 after jittering
 --- EstimateLightVisibility ---
-0
-Final count: 1 lights 1 suns in use.
+0....1....2....3....4....5....6...
+Final count: 3 lights 1 suns in use.
 Colored light entities/settings detected: .lit output enabled.
 --- LightWorld ---
 --- MakeTextureColors ---
@@ -37,13 +37,13 @@ Colored light entities/settings detected: .lit output enabled.
 0....1....2....3....4....5....6....7....8....9....
 Lighting Completed.
 
-lightdatasize: 7892
-Writing C:\msys64\project-enigma\PC\enigma\maps\nuke.lit
+lightdatasize: 27828
+Writing C:\msys64\project-enigma\PC\enigma\maps\nuketown.lit
 0 switchable light styles (32 max)
-Writing C:\msys64\project-enigma\PC\enigma\maps\nuke.bsp as BSP version 29
-0.127 seconds elapsed
+Writing C:\msys64\project-enigma\PC\enigma\maps\nuketown.bsp as BSP version 29
+0.251 seconds elapsed
 
 stats:
-0.765480 lights tested, 0.379700 hits per sample point
-27.546346 bounce lights tested, 16.443728 hits per sample point
+0.734811 lights tested, 0.189212 hits per sample point
+21.245088 bounce lights tested, 8.060447 hits per sample point
 0 empty lightmaps

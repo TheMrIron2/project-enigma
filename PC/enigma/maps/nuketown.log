@@ -1,0 +1,83 @@
+---- qbsp / ericw-tools v0.18.1 ----
+Input file: C:\msys64\project-enigma\PC\enigma\maps\nuketown.map
+Output file: C:\msys64\project-enigma\PC\enigma\maps\nuketown.bsp
+
+---- LoadMapFile ----
+*** WARNING 06: No info_player_deathmatch entities in level
+          539 faces
+           90 brushes
+            5 entities
+            5 unique texnames
+          137 texinfo
+
+Opened WAD: /msys64/project-enigma/PC/enigma/textures/ex.wad
+Processing hull 0...
+---- Brush_LoadEntity ----
+           90 brushes
+          135 planes
+---- CSGFaces ----
+          539 brushfaces
+          516 csgfaces
+          491 mergedfaces
+---- SolidBSP ----
+          659 split nodes
+          287 solid leafs
+          373 empty leafs
+            0 water leafs
+            0 detail leafs
+            0 detail illusionary leafs
+            0 detail fence leafs
+            0 illusionary visblocker leafs
+         1473 leaffaces
+         1317 nodefaces
+---- Portalize ----
+          373 vis leafs
+          373 vis clusters
+         1070 vis portals
+---- FillOutside ----
+          110 outleafs
+---- MergeAll ----
+          490 mergefaces
+---- SolidBSP ----
+          239 split nodes
+          108 solid leafs
+          132 empty leafs
+            0 water leafs
+            0 detail leafs
+            0 detail illusionary leafs
+            0 detail fence leafs
+            0 illusionary visblocker leafs
+          896 leaffaces
+          682 nodefaces
+---- Portalize ----
+          132 vis leafs
+          132 vis clusters
+          343 vis portals
+---- Tjunc ----
+          603 world edges
+         2247 edge points
+          631 edges added by tjunctions
+            0 faces added by tjunctions
+---- MakeFaceEdges ----
+---- GrowRegions ----
+Processing hull 1...
+Processing hull 2...
+---- WriteBSPFile ----
+Wrote C:\msys64\project-enigma\PC\enigma\maps\nuketown.bsp
+          204 planes             4080
+          874 vertexes          10488
+          239 nodes              5736
+          116 texinfo            4640
+          682 faces             13640
+          340 clipnodes          2720
+          133 leafs              3724
+          896 marksurfaces       1792
+         3358 surfedges         13432
+         1680 edges              6720
+            5 textures          42384
+              lightdata             0
+              visdata               0
+              entdata             797
+
+0.136 seconds elapsed
+Peak memory usage: 4186840 (4.0M)

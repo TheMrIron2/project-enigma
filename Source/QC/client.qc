@@ -16,6 +16,7 @@ void() PlayerPreThink = {
 
 void() PlayerPostThink = {
     checkImpulses();
+    checkPlayer();
 }
 
 void() PutClientInServer = {
@@ -33,11 +34,21 @@ void() PutClientInServer = {
     self.angles = spawnspot.angles;
     self.fixangle = TRUE;
 
-    setmodel(self, "progs/player.mdl");
+    setmodel(self, "models/player.mdl");
     setsize(self, VEC_HULL_MIN, VEC_HULL_MAX);
 
     self.view_ofs = '0 0 22';
     self.velocity = '0 0 0';
 
     self.maxspeed = 120; //temporarily here (FIXME) - add walk speeds
+
+    //Weapon stuff
+    self.weapon = W_STG;
+    self.currentmag = getWeaponMag(self.weapon);
+    self.currentammo = getWeaponReserve(self.weapon);
+    self.weaponmodel = getWeaponModel(1, self.weapon);
+    SwitchWeapon(self.weapon); //tell the client 'hey we have a new vmodel'
+
+    //here just to test hud stuff
+    setGamemode(GM_TDM);
 }

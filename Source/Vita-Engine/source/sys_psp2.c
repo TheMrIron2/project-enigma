@@ -96,7 +96,7 @@ void Log(const char *format, ...) {
 	va_end(arg);
 	int i;
 	sprintf(msg, "%s\n", msg);
-	FILE* log = fopen("ux0:/data/Quake/log.txt", "a+");
+	FILE* log = fopen("ux0:/data/Enigma/log.txt", "a+");
 	if (log != NULL) {
 		fwrite(msg, 1, strlen(msg), log);
 		fclose(log);
@@ -255,7 +255,7 @@ void Sys_Error(char *error, ...)
 	vsnprintf(buf, sizeof(buf), error, argptr);
 	va_end(argptr);
 	sprintf(buf, "%s\n", buf);
-	FILE* f = fopen("ux0:/data/Quake/log.txt", "a+");
+	FILE* f = fopen("ux0:/data/Enigma/log.txt", "a+");
 	fwrite(buf, 1, strlen(buf), f);
 	fclose(f);
 	Sys_Quit();
@@ -453,7 +453,7 @@ int main(int argc, char **argv)
 
 	parms.memsize = 30 * 1024 * 1024;
 	parms.membase = malloc(parms.memsize);
-	parms.basedir = "ux0:/data/Quake";
+	parms.basedir = "ux0:/data/Enigma";
 	
 	// Initializing empty ModList
 	mods = NULL;
@@ -476,7 +476,7 @@ int main(int argc, char **argv)
 	
 	// Loading resolution from config file, this is not handled vita Host cause Host_Init required vitaGL to be working
 	char res_str[64];
-	FILE *f = fopen("ux0:data/Quake/resolution.cfg", "rb");
+	FILE *f = fopen("ux0:data/Enigma/resolution.cfg", "rb");
 	if (f != NULL){
 		fread(res_str, 1, 64, f);
 		fclose(f);

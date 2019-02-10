@@ -1,7 +1,14 @@
 ../../../PC/enigma/csprogs.dat
 
+//Defs
 ../client/csdefs.qc
 ../client/customdefs.qc
+
+//Client-Server Stuff
+../shared/customdefs.qc
+../shared/weapon_defs.qc
+
+//Stuff we probably care about
 ../client/hud.qc
 ../client/menu.qc
 ../client/main.qc

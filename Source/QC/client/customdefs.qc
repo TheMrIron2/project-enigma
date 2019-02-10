@@ -11,8 +11,14 @@ const float MENU_MAIN = 1;
 const float MENU_PAUSE = 2;
 
 float walk;
+float weapon;
 
 entity vmodel;
 entity dummy;
+
+vector vmodel_targetpos;
+vector vmodel_currentpos;
+vector vmodel_velocity;
+vector vmodel_avelocity;
 
 float K_LEFTDOWN, K_RIGHTDOWN, K_BACKDOWN, K_FORWARDDOWN;
